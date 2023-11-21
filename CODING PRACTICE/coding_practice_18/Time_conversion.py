@@ -1,0 +1,12 @@
+t=input()
+length=len(t)
+if(t[length-1]=="M"):
+    time=t[:length-1]
+    hour=int(time)*(1/60)
+    hour=round(hour,2)
+    print(str(hour)+"H")
+else:
+    time=t[:length-1]
+    hour=int(time)*(1/3600)
+    hour=round(hour,2)
+    print(str(hour)+"H")
